@@ -60,7 +60,18 @@ Windows上安装：
 			git remote -v
 		14、然后将本地的改动提交到远程仓库
 			git push origin 分支
-		15、
+		15、创建一个分支dev
+			git branch dev
+			git branch 后面不加分支的名字就是查看当前分支
+		16、切换到当前分支
+			git checkout dev
+		17、创建并切换分支
+			git checkout -b dev
+		18、切换到主分支
+			git checkout master
+		19、合并dev分支到master(可能会有冲突)
+			git merge dev
+			
 
 
 
