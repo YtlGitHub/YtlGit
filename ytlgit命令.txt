@@ -37,7 +37,7 @@ Windows上安装：
 			注意：每次提交前，先用git status看下，是不是都已暂存起来了，然后在执行提交命令
 		6、跳过暂存区域的提交方法
 			git commit -a -m "代码提交信息"
-			git commite 加上-a 选项，git 就会把自动把所有已经跟踪过的文件暂存起来一并提交。从而跳过add
+			git commit 加上-a 选项，git 就会把自动把所有已经跟踪过的文件暂存起来一并提交。从而跳过add
 		7、查看工作区和版本库里面最新版本的区别
 			git diff HEAD -- filename
 		8、移除文件：
@@ -60,6 +60,7 @@ Windows上安装：
 			git remote -v
 		14、然后将本地的改动提交到远程仓库
 			git push origin 分支
+		15、
 
 
 
