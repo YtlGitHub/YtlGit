@@ -8,7 +8,7 @@ Windows上安装：
 	一般习惯性用git bash here
 	最后一步设置标识，输入如下命令：
 		git config --global user.name "你的名字"
-		git config --global user.email "你的邮箱"
+		git config --global user.email "你的密码"
 		
 	git流程：
 		Remote---pull------------------------------------------------->workspace
@@ -83,6 +83,7 @@ Windows上安装：
 	ssh-keygen -t rsa -C "1766842398Qqq.com"
 	id_esa 是私钥
 	id_ras.pub 是公钥
+	
 			
 
 
