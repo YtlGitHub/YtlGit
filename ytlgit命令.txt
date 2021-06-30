@@ -8,7 +8,7 @@ Windows上安装：
 	一般习惯性用git bash here
 	最后一步设置标识，输入如下命令：
 		git config --global user.name "你的名字"
-		git config --global user.email "你的密码"
+		git config --global user.email "你的邮箱"
 		
 	git流程：
 		Remote---pull------------------------------------------------->workspace
@@ -54,8 +54,8 @@ Windows上安装：
 			git reaet --hard HEAD~100 回退到前100个版本
 			git reaet --hare HEAD 版本号 回退到固定版本号
 			git reflog 记录每一次命令(可查看版本号)
-		12、推送到远程仓库
-			git remote add origin <url>
+		12、与远程仓库建立连接
+			git remote add origin git@github.com:YtlGitHub/YtlGit.git
 		13、如果已经关联了远程仓库，可以使用下述命令查看远程仓库是哪个
 			git remote -v
 		14、然后将本地的改动提交到远程仓库
@@ -81,8 +81,10 @@ Windows上安装：
 			git pull
 创建密钥：
 	ssh-keygen -t rsa -C "1766842398Qqq.com"
+	cat ~/.ssh/id_rsa.pub
 	id_esa 是私钥
-	id_ras.pub 是公钥
+	id_rsa.pub 是公钥
+	在在GitHub 头像点击设置里面添加ssh
 
 git中的SSL certificate problem: unable to get local issuer certificate错误的解决办法
 	我们在使用git初始化一个项目时，尤其是通过git submodule update --init --remote初始化子模块时，可能会遇到下面这个错误：
