@@ -9,4 +9,6 @@ Windows上安装：
 	最后一步设置标识，输入如下命令：
 		git config --global user.name "你的名字"
 		git config --global user.email "你的邮箱"
-	
+	Remote---pull------------------------------------------------->workspace
+	Remote---fetch/clone--->Repository---checkout----------------->workspace
+	Remote<--push-----------Repository<---commit---index<---add---workspace
