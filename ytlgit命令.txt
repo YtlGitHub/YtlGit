@@ -19,12 +19,12 @@ Windows上安装：
 		* repository：本地仓库
 		* remote；远程仓库
 		
-	一次完整的git使用过程：
+	一次完整的git使用过程：查看文件内容(cat filename)
 		1、创建或者获取版本库
 			创建本地库，选择一个文件目录，然后右击git bash命令行窗口，执行如下命令初始化一个本地仓库
 			git init/git init "创建一个新的文件夹做仓库"
 		2、获取远程仓库至本地仓库
-			git clone url
+			git clone git://github.com/YtlGitHub/YtlGit
 		3、检查当前文件状态
 			git status
 		4、把更改的内容添加到暂存区
@@ -33,7 +33,7 @@ Windows上安装：
 			git add *.txt (支持通配符，所有.txt文件)
 			此时，暂存区的内容和工作区的内容一致
 		5、提交到本地仓库
-			git commite -m "代码提交信息"
+			git commit -m "代码提交信息"
 			注意：每次提交前，先用git status看下，是不是都已暂存起来了，然后在执行提交命令
 		6、跳过暂存区域的提交方法
 			git commit -a -m "代码提交信息"
@@ -55,7 +55,7 @@ Windows上安装：
 			git reaet --hare HEAD 版本号 回退到固定版本号
 			git reflog 记录每一次命令(可查看版本号)
 		12、推送到远程仓库
-			.git remote add origin <url>
+			git remote add origin <url>
 		13、如果已经关联了远程仓库，可以使用下述命令查看远程仓库是哪个
 			git remote -v
 		14、然后将本地的改动提交到远程仓库
@@ -71,6 +71,18 @@ Windows上安装：
 			git checkout master
 		19、合并dev分支到master(可能会有冲突)
 			git merge dev
+		20、把刚才新建的分支删除
+			git branch -d dev
+		21、将分支推送到远端仓库（推送成功后其他人可见）
+			git push origin 分支名
+			git remote set-url origin https://github.com/YtlGitHub/YtlGit.git
+			git push origin main
+		22、如果push失败了，那就先pull一下，在push
+			git pull
+创建密钥：
+	ssh-keygen -t rsa -C "1766842398Qqq.com"
+	id_esa 是私钥
+	id_ras.pub 是公钥
 			
 
 
