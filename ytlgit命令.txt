@@ -80,7 +80,7 @@ Windows上安装：
 		22、如果push失败了，那就先pull一下，在push
 			git pull
 创建密钥：
-	ssh-keygen -t rsa -C "1766842398Qqq.com"
+	ssh-keygen -t rsa -C "1766842398@qq.com"
 	cat ~/.ssh/id_rsa.pub
 	id_esa 是私钥
 	id_rsa.pub 是公钥
