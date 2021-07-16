@@ -1,4 +1,5 @@
 安装git
+
 Linux上安装：
 	命令：yum install git
 	验证安装是否成功命令:git --version
