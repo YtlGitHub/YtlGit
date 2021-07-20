@@ -10,15 +10,18 @@
 三.安装Hexo
 	1.打开Git命令行，执行如下命令
 		$ npm install -g hexo
-	2.在电脑中建立一个名字叫「Hexo」的文件夹（比如我建在了D:\Hexo），然后在此文件夹中右键打开Git Bash。执行下面的命令
+四.开始部署前提条件
+	1.在电脑中建立一个名字叫「Hexo」的文件夹（比如我建在了D:\Hexo），然后在此文件夹中右键打开Git Bash。执行下面的命令
 		$ hexo init
-	Hexo随后会自动在目标文件夹建立网站所需要的文件。然后按照提示，运行 npm install（在 /D/Hexo下）
-	npm install
-	会在D:\Hexo目录中安装 node_modules
-	3.启动在浏览器访问http://localhost:4000/，这时可以看到Hexo已为你生成了一篇blog
+			Hexo随后会自动在目标文件夹建立网站所需要的文件。然后按照提示，运行 npm install（在 /D/Hexo下）
+	2.在执行npm install
+		$ npm install
+			会在D:\Hexo目录中安装 node_modules
+五.生成本地博客
+	1.启动在浏览器访问http://localhost:4000/，这时可以看到Hexo已为你生成了一篇blog
 		$ hexo server
 		按Ctrl+C 停止Server
-	4.新建一个文章
+	2.新建一个文章
 		$ hexo new "文章名"
 		[info] File created at d:\Hexo\source\_posts\My-New-Post.md
 		刷新http://localhost:4000/，可以发现已生成了一篇新文章 "My New Post"
